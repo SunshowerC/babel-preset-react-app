@@ -65,7 +65,7 @@
   "_spec": "babel-preset-react-app@^6.0.0",
   "_where": "/Users/weiyu.chen/workspace/gitlab/App",
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/Weiyu-Chen/babel-preset-react-app/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -90,7 +90,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.18"
   },
   "deprecated": false,
-  "description": "Babel preset used by Create React App",
+  "description": "Babel preset used by Create React App. For es6 modules build",
   "files": [
     "create.js",
     "dependencies.js",
@@ -100,12 +100,12 @@
     "prod.js",
     "test.js"
   ],
-  "homepage": "https://github.com/facebook/create-react-app#readme",
+  "homepage": "https://github.com/Weiyu-Chen/babel-preset-react-app#readme",
   "license": "MIT",
-  "name": "babel-preset-react-app",
+  "name": "babel-preset-react-app-wy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/facebook/create-react-app.git"
+    "url": "git+https://github.com/Weiyu-Chen/babel-preset-react-app.git"
   },
   "version": "6.1.0"
 }
