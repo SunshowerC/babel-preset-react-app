@@ -44,6 +44,11 @@ module.exports = function(api, opts, env) {
     true
   );
   
+// We want Create React App to be IE 9 compatible until React itself
+// no longer works with IE 9
+  var targets = opts.targets || {
+    ie: 9,
+  }
 
   var absoluteRuntimePath = undefined;
   if (useAbsoluteRuntime) {
@@ -77,11 +82,8 @@ module.exports = function(api, opts, env) {
         // Latest stable ECMAScript features
         require('@babel/preset-env').default,
         {
-          // We want Create React App to be IE 9 compatible until React itself
-          // no longer works with IE 9
-          targets: {
-            ie: 9,
-          },
+
+          targets,
           // Users cannot override this behavior because this Babel
           // configuration is highly tuned for ES5 support
           ignoreBrowserslistConfig: true,

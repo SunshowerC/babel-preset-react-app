@@ -57,3 +57,6 @@ TypeScript is enabled by default. Make sure you have a `tsconfig.json` file at t
 
 - helpers:boolean = true   
 @babel/plugin-transform-runtime 的 helpers 选项
+
+- targets:object = {ie:9}
+'@babel/preset-env' 的 targets 选项
