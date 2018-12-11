@@ -35,12 +35,15 @@ module.exports = function(api, opts, env) {
     opts.typescript,
     true
   );
+
+  var isRegeneratorEnabled = validateBoolOption('regenerator', opts.regenerator, true);
   var areHelpersEnabled = validateBoolOption('helpers', opts.helpers, true);
   var useAbsoluteRuntime = validateBoolOption(
     'absoluteRuntime',
     opts.absoluteRuntime,
     true
   );
+  
 
   var absoluteRuntimePath = undefined;
   if (useAbsoluteRuntime) {
@@ -147,7 +150,7 @@ module.exports = function(api, opts, env) {
         {
           corejs: false,
           helpers: areHelpersEnabled,
-          regenerator: true,
+          regenerator: isRegeneratorEnabled,
           // https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules
           // We should turn this on once the lowest version of Node LTS
           // supports ES Modules.

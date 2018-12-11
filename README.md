@@ -51,3 +51,9 @@ TypeScript is enabled by default. Make sure you have a `tsconfig.json` file at t
   "presets": [["react-app", { "flow": false, "typescript": true }]]
 }
 ```
+## Custom Option
+- regenerator:boolean = true   
+@babel/plugin-transform-runtime 的 regenerator 选项
+
+- helpers:boolean = true   
+@babel/plugin-transform-runtime 的 helpers 选项
